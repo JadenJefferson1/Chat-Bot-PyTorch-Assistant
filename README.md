@@ -40,7 +40,7 @@ Preprocessing for this data saw us lower casing all words, and lemmatizing each 
 - Lower: *Hello -> hello, HELLO -> hello, JADEN -> jaden, Jaden -> jaden*
 - Lemmatize: *studies -> study, studying -> study, studied -> study* 
 
-Links to sources used
+Links to sources used<br>
 https://www.kaggle.com/discussions/questions-and-answers/172221<br>
 https://github.com/Devinterview-io/pytorch-interview-questions?tab=readme-ov-file<br>
 https://www.javatpoint.com/pytorch-interview-questions<br>

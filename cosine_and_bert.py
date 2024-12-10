@@ -63,19 +63,3 @@ def main():
         else:
             print(colored("{}:".format(ai_name), "light_green") + "{}\n".format(conversation([input_message])))
 main()
-
-'''
-DATA USED
-https://www.kaggle.com/discussions/questions-and-answers/172221
-https://github.com/Devinterview-io/pytorch-interview-questions?tab=readme-ov-file
-https://www.javatpoint.com/pytorch-interview-questions
-
-DATA FOR FUTURE USE
-https://www.synergisticit.com/pytorch-interview-questions-and-answers/
-https://www.devopsschool.com/blog/top-50-interview-questions-and-answers-of-pytorch/
-
-RESOURCES
-https://www.analyticsvidhya.com/blog/2020/08/top-4-sentence-embedding-techniques-using-python/
-https://www.geeksforgeeks.org/euclidean-distance-using-scikit-learn-python/
-https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.euclidean_distances.html
-'''
