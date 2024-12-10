@@ -1,0 +1,51 @@
+﻿QuestionBody,AnswerBody,Tags
+What is PyTorch?,"PyTorch is a part of computer software based on torch library, which is an open-source Machine learning library for Python. It is a deep learning framework developed by the Facebook AI research group.",<pytorch>
+What are the essential elements of PyTorch?,"The essential elements in PyTorch are: PyTorch Tensors, PyTorch NumPy, Mathematical operations, Autograd Module, Optim Module, nn Module.",<pytorch>
+What is Tensors?,"Tensors play an important role in deep learning with PyTorch. Tensors are generalized matrices: they can be 1D (vector), 2D (matrix), 3D (cube), or 4D (cube vector).",<pytorch>
+What is the levels of abstraction?,"The levels of abstraction in PyTorch are: Tensor (imperative n-dimensional array that runs on GPU), Variable (node in computational graph storing data and gradient), and Module (neural network layer storing learnable weights).",<pytorch>
+Are tensor and matrix the same?,"Tensors and matrices are not the same, though similar. A tensor is a mathematical entity that obeys a specific transformation rule in relation to other entities.",<pytorch>
+What is the use of torch.from_numpy()?,"torch.from_numpy() creates a tensor from a NumPy ndarray. The ndarray and the tensor share the same memory, meaning changes to one reflect on the other.",<pytorch>
+What is variable and autograd.variable?,"Variable is used to wrap a tensor, while autograd.variable is the central class in autograd. It implements automatic differentiation for scalar-valued functions.",<pytorch>
+How do we find the derivatives of the function in PyTorch?,"To find derivatives in PyTorch: 1) Initialize the function, 2) Set variable values, 3) Compute derivative using backward(), 4) Print the value with .grad.",<pytorch>
+What do you mean by Linear Regression?,Linear Regression is a supervised learning method used to find the linear relationship between dependent and independent variables by minimizing distances.,<pytorch>
+What is Loss Function?,The loss function evaluates how well an algorithm models a dataset. It outputs a higher number for worse predictions and a lower number for better ones.,<pytorch>
+"What is the use of MSELoss, CTCLoss, and BCELoss function?","MSELoss measures mean squared error, CTCLoss calculates loss between time series and target sequences, and BCELoss computes Binary Cross Entropy loss.",<pytorch>
+Give any one difference between torch.nn and torch.nn.functional?,"torch.nn provides classes to implement and train neural networks, while torch.nn.functional contains functions like activation and convolution (not full layers).",<pytorch>
+What do you mean by Mean Squared Error?,"Mean Squared Error measures how close a regression line is to a set of points, by squaring the distances to remove negative signs.",<pytorch>
+What is perceptron?,"A perceptron is a binary classifier and the simplest neural network model, based on a biological neuron in an artificial neural network.",<pytorch>
+What is Activation function?,"An activation function determines whether a neuron should be activated, calculating a weighted sum and bias to decide the output.",<pytorch>
+How Neural Network differs from Deep Neural Network?,"Neural Networks have one hidden layer, while Deep Neural Networks have more than one hidden layer, allowing for more accurate predictions.",<pytorch>
+Why it is difficult for the network is showing the problem?,"ANNs work with numerical data, and problems are translated into numeric values before being introduced to the network, making it difficult to visualize.",<pytorch>
+Why we used activation function in Neural Network?,"Activation functions map resulting values between a specific range (e.g., 0 to 1 or -1 to 1), either linearly or non-linearly.",<pytorch>
+Why we prefer the sigmoid activation function rather than other function?,"The sigmoid activation function is preferred because its output lies between 0 and 1, useful for models predicting probabilities as output.",<pytorch>
+What do you mean by Feed-Forward?,Feed-Forward refers to the process of receiving input and producing output for predictions. It forms the basis for neural networks like CNNs and DNNs.,<pytorch>
+"What is the difference between Conv1d, Conv2d, and Conv3d?","Conv1d applies 1D convolution, Conv2d applies 2D convolution, and Conv3d applies 3D convolution to input signals with several planes.",<pytorch>
+What do you understand from the word Backpropagation?,Backpropagation is a set of algorithms used to calculate the gradient of the error function in neural networks using gradient descent.,<pytorch>
+What is Convolutional Neural Network?,"A Convolutional Neural Network is used in tasks like image classification and recognition. It processes input images to classify them (e.g., dog, cat).",<pytorch>
+What is the difference between DNN and CNN?,DNN refers to deep neural networks with many layers. CNNs are a type of DNN with convolution layers for detecting specific parts of images.,<pytorch>
+What are the advantages of PyTorch?,"Advantages of PyTorch: easy to debug, dynamic graph computation, faster training, improved developer productivity, easy to learn, simpler to code.",<pytorch>
+What is the difference between PyTorch and TensorFlow?,"PyTorch provides a lower level of APIs, is faster, uses a simple graph construction approach, and works dynamically and imperatively.",<pytorch>
+"Give any one difference between batch, stochastic, and mini-batch gradient descent?","Stochastic Gradient Descent uses a single training example for gradient calculation, while Mini-batch Gradient Descent uses batches, making it more efficient.",<pytorch>
+What is auto-encoder?,"An auto-encoder is a machine learning algorithm that learns representations of data using backpropagation, with the target equal to the input.",<pytorch>
+What is Autograd module in PyTorch?,"Autograd is PyTorch's automatic differentiation technique for neural networks, recording operations to compute gradients efficiently.",<pytorch>
+What is the optim module in PyTorch?,torch.optim implements optimization algorithms like Adam and SGD for building neural networks.,<pytorch>
+What is nn module in PyTorch?,torch.nn provides modules and classes for creating and training neural networks. It supports the building of models from simple to complex architectures.,<pytorch>
+What is the command to install PyTorch in windows using Conda and pip?,To install PyTorch: Conda: `conda install pytorch cudatoolkit=10.0 -c pytorch-nightly` or pip: `pip install torch -f https://download.pytorch.org/whl/nightly/cpu/torch.html`.,<pytorch>
+What is torch.cuda?,"torch.cuda adds support for CUDA tensors, using GPUs for computation, speeding up neural network training.",<pytorch>
+What is the difference between Type1 and Type2 error?,"Type 1 error is a false positive, indicating something is happening when it is not. Type 2 error is a false negative, indicating nothing is wrong when something is.",<pytorch>
+Why use PyTorch for Deep learning?,"PyTorch is preferred for deep learning because it allows dynamic graph definition, provides flexibility, and supports cutting-edge research.",<pytorch>
+What is the attributes of Tensor?,"Each PyTorch tensor has the attributes torch.device, torch.layout, and torch.dtype, which define device allocation, memory layout, and data type.",<pytorch>
+What is the difference between Anaconda and Miniconda?,"Anaconda is a full distribution with hundreds of packages like conda, numpy, scipy, etc. Miniconda is a smaller alternative.",<pytorch>
+How do we check GPU usage?,"To check GPU usage: Open the run command (Win+R), type 'dxdiag.exe', and check under the 'Display' tab for driver information.",<pytorch>
+What is the MNIST dataset?,"The MNIST dataset contains handwritten digits used for image recognition tasks, demonstrating the power of deep neural networks.",<pytorch>
+What is the CIFAR-10 dataset?,"CIFAR-10 is a dataset of color images used in machine learning and computer vision, containing 50,000 training and 10,000 validation images across 10 classes.",<pytorch>
+What is the difference between CIFAR-10 and CIFAR-100 dataset?,"CIFAR-100 contains 100 classes with 600 images per class, while CIFAR-10 has 10 classes, each with 5,000 training images.",<pytorch>
+What do you mean by convolution layer?,The convolution layer extracts features from an input image through mathematical operations involving image matrices and kernels.,<pytorch>
+What do you mean by Stride?,Stride refers to the number of pixels shifted over the input matrix during convolution. A stride of 1 means shifting by one pixel.,<pytorch>
+What do you mean by Padding?,Padding adds extra layers around an image to prevent shrinking outputs and losing information at the edges of the image during convolution.,<pytorch>
+What is pooling layer?,Pooling reduces the number of parameters in large images by downscaling. It decreases the input's size without losing important information.,<pytorch>
+What is Max Pooling?,Max Pooling downscales an input by selecting the maximum value from a sub-region of the input image.,<pytorch>
+What is Average Pooling?,"Average Pooling divides the input into regions and computes the average value for each region, reducing dimensionality.",<pytorch>
+What is Sum Pooling?,"Sum Pooling sums values from sub-regions instead of taking the max (as in max pooling), preserving overall patterns.",<pytorch>
+What do you mean by fully connected layer?,"The fully connected layer flattens the input from other layers into a vector, transforming it into the desired number of output classes.",<pytorch>
+What is the Softmax activation function?,"The Softmax activation function converts logits into probabilities that sum to 1, representing the probability of each class.",<pytorch>

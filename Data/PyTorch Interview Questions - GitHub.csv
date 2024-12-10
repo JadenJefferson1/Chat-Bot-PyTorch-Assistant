@@ -1,0 +1,19 @@
+QuestionBody,AnswerBody
+What is PyTorch and how does it differ from other deep learning frameworks like TensorFlow?,"PyTorch is a product of Facebook's AI Research lab, an open-source machine learning library built on dynamic computation graphs.
+    Unlike TensorFlow, PyTorch offers dynamic computational graphs for complex architectures, is more Pythonic, and supports multi-GPU training."
+Explain the concept of Tensors in PyTorch.,"In PyTorch, Tensors are the fundamental building blocks. They allow numerical computations on devices like CPUs, GPUs, and TPUs.
+    Tensors are similar to NumPy arrays but have features like automatic differentiation and support for hardware acceleration."
+"In PyTorch, what is the difference between a Tensor and a Variable?","Tensors and Variables were initially separate in PyTorch. Variables allowed for automatic differentiation.
+    Since version 0.4, Variables have been merged with Tensors, making Tensors gradient-enabled by default."
+How can you convert a NumPy array to a PyTorch Tensor?,NumPy arrays can be converted to PyTorch tensors using `torch.Tensor()` or `torch.from_numpy()`. The latter shares memory with the NumPy array.
+What is the purpose of the .grad attribute in PyTorch Tensors?,"The `.grad` attribute stores the gradient of the tensor. It accumulates gradients during backpropagation, essential for training neural networks."
+Explain what CUDA is and how it relates to PyTorch.,"CUDA is an NVIDIA technology for GPU computing. In PyTorch, CUDA allows leveraging GPUs for deep learning tasks, reducing training time significantly."
+How does automatic differentiation work in PyTorch using Autograd?,"Automatic differentiation in PyTorch is powered by the autograd engine, which tracks tensor operations, builds computation graphs, and computes gradients during backpropagation."
+Describe the steps for creating a neural network model in PyTorch.,"Steps: Design architecture, prepare data, construct the model using `torch.nn.Module`, choose loss function and optimizer, run the training loop, and evaluate the model."
+"What is a Sequential model in PyTorch, and how does it differ from using the Module class?","The Sequential model in PyTorch is simpler and suited for linear stack models, while the Module class offers more flexibility for custom, complex architectures."
+How do you implement custom layers in PyTorch?,"To create custom layers, subclass `nn.Module`, define the layer's parameters in `__init__`, and implement the forward pass in the `forward` method."
+What is the role of the forward method in a PyTorch Module?,The forward method defines how the input flows through layers to produce predictions. It constructs the dynamic computation graph in PyTorch.
+"In PyTorch, what are optimizers, and how do you use them?","Optimizers, such as SGD and Adam, adjust model weights during training by using gradients computed via backpropagation to minimize the loss function."
+"What is the purpose of zero_grad() in PyTorch, and when is it used?",The `zero_grad()` function clears the accumulated gradients from previous iterations to prevent incorrect gradient updates during backpropagation.
+How can you implement learning rate scheduling in PyTorch?,PyTorch's `torch.optim.lr_scheduler` module allows adjusting the learning rate dynamically during training. Common schedulers include StepLR and ReduceLROnPlateau.
+Describe the process of backpropagation in PyTorch.,"Backpropagation is the process of calculating gradients through the computation graph, allowing the optimizer to update weights based on the loss function."
